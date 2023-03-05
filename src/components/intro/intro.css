@@ -1,17 +1,18 @@
 .i {
   display: flex;
   height: 100vh;
+  
 }
 
 .i-left {
-  flex: 1;
+  flex: 0.3;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .i-right {
-  flex: 1;
+  flex: 0.5;
   position: relative;
 }
 
@@ -76,7 +77,6 @@
 .i-img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
   position: absolute;
 }
 
@@ -86,11 +86,12 @@
   width: 100%;
   height: 100%;
   position: absolute;
+  overflow-x: none;
   top: 0;
   right: 0;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 300px) {
   .i {
     flex-direction: column;
   }
@@ -107,3 +108,5 @@
     display: none;
   }
 }
+
+
